@@ -2,17 +2,17 @@ pr: none
 trigger: none
 
 variables:
-- group: devopsforai-aml-vg
+- group: tg-aml-vg
 - name: INPUT_CONTAINER_NAME
-  value: 'inputdata'
+  value: 'input'
 - name: TRAINING_CONTAINER_NAME
-  value: 'trainingdata'
+  value: 'training'
 - name: TESTING_CONTAINER_NAME
-  value: 'testingdata'
+  value: 'testing'
 - name: MNT_PREFIX
   value: '/mnt/'
 - name: STORAGE_ACCOUNT_POSTFIX
-  value: 'amlsa'
+  value: 'devops4ds3115195788'
 
 stages:
 - stage: 'Prepare_Pipelines'
